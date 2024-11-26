@@ -31,7 +31,7 @@ Installing the Extension
 
     Clone this repository:
 
-    git clone https://github.com/your-username/ai-story-generator-extension.git
+    git clone https://github.com/haruthuc/memory-story-ai.git
     cd ai-story-generator-extension
 
     Open Chrome and navigate to chrome://extensions.
