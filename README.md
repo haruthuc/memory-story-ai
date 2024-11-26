@@ -60,17 +60,6 @@ Keywords from the input are automatically highlighted in the generated story.
     Use the Reset button to clear all inputs and outputs.
     Toggle the Instructions panel for setup help.
 
-Project Structure
-
-ai-story-generator-extension/
-├── manifest.json       # Chrome extension manifest
-├── background.js       # Background script for persistent functionality
-├── popup.html          # Main extension popup UI
-├── popup.js            # Core logic for the extension UI
-├── styles.css          # Styles for the popup UI
-├── icons/              # Extension icons
-└── README.md           # Documentation
-
 Technologies Used
 
     Chrome Extensions API: For storage, runtime, and UI interactions.
