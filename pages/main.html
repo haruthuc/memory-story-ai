@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memory Story</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <div id="sidepanel" class="sidepanel">
+    <header>
+      <span class="material-symbols-outlined">menu</span>
+      <h1>Enter the list</h1>
+    </header>
+    <div class="content">
+      <textarea id="memory-summary-text" placeholder="AI Assistant will make the story form your list"></textarea>
+      <p id="char-counter" class="text-gray-500 text-sm">
+        Characters: 0/4000
+      </p>
+
+      <div id="gemini-panel">
+        <div>
+          <h2>Genemini Nano AI - Settings</h2>
+          <input
+            type="range"
+            id="temperature"
+            name="temperature"
+            min="0"
+            max="2"
+            step="0.01"
+          />
+          <label for="temperature"
+            >Temperature: <span id="label-temperature"></span
+          ></label>
+        </div>
+        <div>
+          <input type="range" id="top-k" name="top-k" min="1" max="8" step="1" />
+          <label for="top-k">Top-k: <span id="label-top-k"></span></label>
+        </div>
+      </div>
+      <div id="button-container">
+        <button id="summarize-button">
+          <span class="material-symbols-outlined">
+            history_edu
+            </span>
+            Generate Story
+        </button>
+        <button id="reset-button">
+          Reset
+        </button>
+
+      </div>
+     
+      <div id="result">
+        <h3>Result:</h3>
+        <p id="summary-output"></p>
+      </div>
+      <button class="collapsible-button" id="toggleButton">Show Instructions</button>
+      <div id="instruction-panel" class="collapsible-content">
+        <p>
+          Gemini Nano is the most efficient version of the Gemini family of LLMs, designed to run locally on most modern desktop and laptop computers.
+        </p>
+        <p>
+          <h1>How to set up built-in AI in Chrome</h1>
+          <ul>
+            <li>Download Chrome 131 from Dev or Canary channel</li>
+            <li>Open chrome://flags/#optimization-guide-on-device-model, set it to Enabled BypassPerfRequirement</li>
+            <li>Open chrome://flags/#prompt-api-for-gemini-nano, set it to Enabled</li>
+            <li>Open chrome://components/, find Optimization Guide On Device Model, ensure it’s fully downloaded</li>
+            <li>Relaunch Chrome</li>
+          </ul>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <script src="../sidepanel.js"></script>
+</body>
+</html>

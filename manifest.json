@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "minimum_chrome_version": "131",
+  "name": "Memory Story",
+  "version": "1.0",
+  "description": "Transform words into images and link them for improved memory.",
+  "icons": {
+    "16": "/icons/icon-16.png",
+    "48": "/icons/icon-48.png",
+    "128": "/icons/icon-128.png"
+  },
+  "side_panel": {
+    "default_path": "/pages/main.html"
+  },
+  
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage","aiLanguageModelOriginTrial","sidePanel", "contextMenus"],
+  "host_permissions": ["https://*/*"],
+  "trial_tokens": [
+    "ApwuG7nUtQaJcnW6V2O8uK+PNZBzI2zMjg3fMIA8Hgvvd3oMINAY4bVwsLABOzrhqvvxH0RUDl8DSKDnulJbhw4AAAB4eyJvcmlnaW4iOiJjaHJvbWUtZXh0ZW5zaW9uOi8vaWpiYmFwbG1qbG1sYWFibGphamJlbGZob2doZGRuZGkiLCJmZWF0dXJlIjoiQUlQcm9tcHRBUElGb3JFeHRlbnNpb24iLCJleHBpcnkiOjE3NjA0ODYzOTl9"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css",
+    "build:css:minify": "NODE_ENV=production tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.min.css --minify"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.15"
+  }
+}
